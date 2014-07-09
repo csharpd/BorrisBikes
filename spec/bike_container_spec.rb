@@ -44,4 +44,5 @@ let (:holder) {ContainerHolder.new}
     expect(holder.available_bikes).to eq ([working_bike])
   end
 
+
 end

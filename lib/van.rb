@@ -1,11 +1,15 @@
 require_relative 'bike_container'
-
+require 'docking_station'
 class Van
 
 include BikeContainer
 
-# def broken_bikes_list
-# end
-#alias_method :dock, :garage
 
+  def collect_broken(docking_station)
+    docking_station.broken_bikes.each do |bike|
+      docking_station.release(bike)
+      self.dock(bike)
+      # self.dock(docking_station.release(bike))
+    end
+  end
 end

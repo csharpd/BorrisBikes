@@ -6,6 +6,10 @@ DEFAULT_CAPACITY = 10
      @bikes ||= []
     end
 
+    def has_bikes?
+
+    end
+
     def capacity
       @capacity ||= DEFAULT_CAPACITY
     end
