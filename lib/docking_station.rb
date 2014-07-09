@@ -9,4 +9,8 @@ include BikeContainer
     @bikes = []
   end
 
+  def broken_bikes_list(broken_bikes)
+    [] << broken_bikes
+  end
+
 end
